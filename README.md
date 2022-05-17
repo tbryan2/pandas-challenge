@@ -86,19 +86,7 @@ df.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -267,19 +255,7 @@ district_summary
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -390,8 +366,7 @@ school_reading_pass_rate = school_reading_pass_rate.drop(
 school_reading_pass_rate = school_reading_pass_rate.reset_index()
 ```
 
-    C:\Users\bryantim\AppData\Local\Temp\ipykernel_16624\1119901948.py:21: FutureWarning: In a future version of pandas all arguments of DataFrame.drop except for the argument 'labels' will be keyword-only.
-      school_reading_pass_rate = school_reading_pass_rate.drop(
+
     
 
 
@@ -420,8 +395,7 @@ school_math_pass_rate = school_math_pass_rate.drop(
     ['math_score','student_count','pass_count'], 1)
 ```
 
-    C:\Users\bryantim\AppData\Local\Temp\ipykernel_16624\3977246586.py:21: FutureWarning: In a future version of pandas all arguments of DataFrame.drop except for the argument 'labels' will be keyword-only.
-      school_math_pass_rate = school_math_pass_rate.drop(
+
     
 
 
@@ -461,8 +435,7 @@ school_overall_pass_rate = school_overall_pass_rate.drop(
     'sum_pass_count', 'overall_pass_count'], 1)
 ```
 
-    C:\Users\bryantim\AppData\Local\Temp\ipykernel_16624\3521200253.py:31: FutureWarning: In a future version of pandas all arguments of DataFrame.drop except for the argument 'labels' will be keyword-only.
-      school_overall_pass_rate = school_overall_pass_rate.drop(
+
     
 
 
@@ -514,19 +487,7 @@ school_summary
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -763,19 +724,7 @@ top_5_overall_passing
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -882,19 +831,7 @@ bottom_5_overall_passing
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1011,19 +948,7 @@ math_scores_by_grade
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1181,19 +1106,7 @@ reading_scores_by_grade
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1364,12 +1277,6 @@ pd.cut(scores_by_school_spending['Budget Per Student'], bins, labels=group_label
 scores_by_school_spending["Spending Per Student Group"] = pd.cut(scores_by_school_spending['Budget Per Student'], bins, labels=group_labels)
 ```
 
-    C:\Users\bryantim\AppData\Local\Temp\ipykernel_16624\3414563277.py:2: SettingWithCopyWarning: 
-    A value is trying to be set on a copy of a slice from a DataFrame.
-    Try using .loc[row_indexer,col_indexer] = value instead
-    
-    See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-      scores_by_school_spending["Spending Per Student Group"] = pd.cut(scores_by_school_spending['Budget Per Student'], bins, labels=group_labels)
     
 
 
@@ -1393,19 +1300,7 @@ scores_by_school_spending
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1515,12 +1410,7 @@ pd.cut(scores_by_school_size['Size'], bins, labels=group_labels)
 scores_by_school_size["School Size"] = pd.cut(scores_by_school_size['Size'], bins, labels=group_labels)
 ```
 
-    C:\Users\bryantim\AppData\Local\Temp\ipykernel_16624\2356858920.py:2: SettingWithCopyWarning: 
-    A value is trying to be set on a copy of a slice from a DataFrame.
-    Try using .loc[row_indexer,col_indexer] = value instead
-    
-    See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-      scores_by_school_size["School Size"] = pd.cut(scores_by_school_size['Size'], bins, labels=group_labels)
+
     
 
 
@@ -1544,19 +1434,7 @@ scores_by_school_size
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1626,19 +1504,7 @@ scores_by_school_type
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
